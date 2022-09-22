@@ -1,13 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
+using System.ComponentModel;
 using Geom.Models;
 
-namespace Geom.Con // Note: actual namespace depends on the project name.
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
+namespace Geom.Con {
+    internal class Program {
+        static void Main(string[] args) { 
             Circle cir = new Circle(10);
             System.Console.WriteLine(cir.ToString());
 
@@ -23,7 +21,6 @@ namespace Geom.Con // Note: actual namespace depends on the project name.
             Cuboid cub = new Cuboid(10, 12.4, 2.1);
             System.Console.WriteLine(cub.returnArea());
             System.Console.WriteLine(cub.returnVolume());
-
         }
     }
 }

@@ -4,29 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Geom.Models
-{
-    public class Square
-    {
+namespace Geom.Models {
+    public class Square {
         private double _length;
 
-        public double Length { 
+        public double Length {
             get { return _length; }
-            set { _length = value; } 
+            set { _length = value; }
         }
 
-        private double CalcArea()
-        {
+        private double CalcArea() {
             return Length * Length;
         }
 
-        public Square(double length)
-        {
+        public Square(double length) {
             Length = length;
         }
 
-        public string returnArea()
-        {
+        public string returnArea() {
             return "Square: " + CalcArea();
         }
     }
